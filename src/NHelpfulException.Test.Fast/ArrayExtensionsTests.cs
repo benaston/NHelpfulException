@@ -1,4 +1,4 @@
-﻿namespace NHelpfulExceptions.Test.Fast
+﻿namespace NHelpfulException.Test.Fast
 {
     using NUnit.Framework;
 

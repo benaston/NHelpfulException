@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHelpfulExceptions.Test.Fast", "NHelpfulExceptions.Test.Fast\NHelpfulExceptions.Test.Fast.csproj", "{654A15EE-081F-4C33-A92B-DFAF448253E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHelpfulException", "NHelpfulException\NHelpfulException.csproj", "{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHelpfulExceptions", "NHelpfulExceptions\NHelpfulExceptions.csproj", "{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NHelpfulException.Test.Fast", "NHelpfulException.Test.Fast\NHelpfulException.Test.Fast.csproj", "{654A15EE-081F-4C33-A92B-DFAF448253E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,18 +12,18 @@ Global
 		Staging|Any CPU = Staging|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
-		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Staging|Any CPU.Build.0 = Staging|Any CPU
 		{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
 		{7B6848BF-FFDB-417B-ABBC-C7E825D66E2D}.Staging|Any CPU.Build.0 = Staging|Any CPU
+		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Staging|Any CPU.ActiveCfg = Staging|Any CPU
+		{654A15EE-081F-4C33-A92B-DFAF448253E9}.Staging|Any CPU.Build.0 = Staging|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

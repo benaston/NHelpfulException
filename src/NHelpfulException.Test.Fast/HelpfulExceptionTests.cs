@@ -1,6 +1,7 @@
-﻿namespace NHelpfulExceptions.Test.Fast
+﻿namespace NHelpfulException.Test.Fast
 {
     using System;
+    using NHelpfulException;
     using NUnit.Framework;
 
     [TestFixture]

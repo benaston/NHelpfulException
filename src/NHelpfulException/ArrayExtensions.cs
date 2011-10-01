@@ -1,4 +1,4 @@
-﻿namespace NHelpfulExceptions
+﻿namespace NHelpfulException
 {
     using System;
 

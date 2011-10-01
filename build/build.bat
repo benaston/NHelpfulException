@@ -9,7 +9,7 @@ goto switch
 
 :loop
 set interactive= "true"
-set /p task= usage: (b)uild(d)ebug / (b)uild(s)taging / (b)uild(r)elease  / (c)lean / (f)ast (t)ests / (s)low (t)ests?:
+set /p task= usage: (b)uild(d)ebug / (b)uild(s)taging / (b)uild(r)elease  / (c)lean / (f)ast (t)ests / (s)low (t)ests / (n)uget (pack)?:
 :: Weird string normalisation or something..
 set task= "%task%"
 
@@ -20,6 +20,8 @@ if %task% == "bs" goto buildstaging
 if %task% == "c" goto clean
 if %task% == "ft" goto fasttests
 if %task% == "st" goto slowtests
+if %task% == "npack" goto nugetpack
+if %task% == "npush" goto nugetpush
 
 :resume
 echo.
@@ -29,19 +31,22 @@ if %interactive% == "true" goto loop
 goto done
 
 :builddebug
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /verbosity:q /p:Configuration=Debug "%CD%\..\src\nhelpfulexceptions.sln"
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /verbosity:q /p:Configuration=Debug "%CD%\..\src\NHelpfulException.sln"
 goto resume
 
 :buildrelease
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /p:Configuration=Release "%CD%\..\src\nhelpfulexceptions.sln"
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /p:Configuration=Release "%CD%\..\src\NHelpfulException.sln"
 goto resume
 
 :buildstaging
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /p:Configuration=Staging "%CD%\..\src\nhelpfulexceptions.sln"
+C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /p:Configuration=Staging "%CD%\..\src\NHelpfulException.sln"
+goto resume
+
+:nugetpack
+nuget pack %CD%\..\src\NHelpfulException\NHelpfulException.csproj -Prop Configuration=Release -Symbols
 goto resume
 
 :clean
-cd %CD%\..\src\
 call %CD%\..\src\clean.bat
 goto resume
 
