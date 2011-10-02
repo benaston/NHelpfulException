@@ -8,12 +8,10 @@
     /// </summary>
     public abstract class HelpfulException : Exception
     {
-        //NOTE: BA; these are not constants to prevent issues
-        //across different versions of this functionality.
-        private static readonly string ResolutionSuggestionListPrefix = "\r\nSuggestions:\r\n";
-        private static readonly string ResolutionSuggestionPrefix = " - ";
-        private static readonly string ResolutionSuggestionDelimiter = "\r\n";
-        private static readonly string ResolutionSuggestionListSuffix = "\r\n";
+        public static readonly string ResolutionSuggestionListPrefix = "\r\nSuggestions:\r\n";
+        public static readonly string ResolutionSuggestionPrefix = " - ";
+        public static readonly string ResolutionSuggestionDelimiter = "\r\n";
+        public static readonly string ResolutionSuggestionListSuffix = "\r\n";
 
         protected HelpfulException(string problemDescription,
                                    string[] resolutionSuggestions = default(string[]),
