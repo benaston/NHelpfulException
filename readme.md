@@ -9,6 +9,7 @@ Usage:
 
 ```C#
 
+
     public class MyHelpfulException : HelpfulException
     {
         public MyHelpfulException(string problemDescription, 
@@ -23,7 +24,10 @@ Usage:
 	
 ```C#
 
-	throw new MyHelpfulException("Coffee supply too low.", new []{ "Buy some more coffee.", "Stop drinking so much coffee." });
+
+	throw new MyHelpfulException("Coffee supply too low.", 
+								  new []{ "Buy some more coffee.", 
+								          "Stop drinking so much coffee." });
 
 ```
 
