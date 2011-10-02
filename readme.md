@@ -31,7 +31,7 @@ Usage:
 
 ```
 
-**3. Bask in the glory of a meaningful exception message
+**3. Bask in the glory of a meaningful exception message**
 
 ```
 	
