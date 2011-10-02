@@ -1,5 +1,12 @@
 @echo off
+REM NuGet.exe must be in the path for the nuget functionality to work here.
 cd /d %0\.. 
+
+setlocal enabledelayedexpansion
+set solutionAndMainProjectName=NHelpfulException
+set msBuildLocation=C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+
+title !solutionAndMainProjectName!
 
 :: Accept command line parameter for non-interactive mode
 if "%1" == "" goto loop
@@ -9,7 +16,7 @@ goto switch
 
 :loop
 set interactive= "true"
-set /p task= usage: (b)uild(d)ebug / (b)uild(s)taging / (b)uild(r)elease  / (c)lean / (f)ast (t)ests / (s)low (t)ests / (n)uget (pack)?:
+set /p task= !solutionAndMainProjectName! build script usage: (b)uild(d)ebug / (b)uild(s)taging / (b)uild(r)elease  / (c)lean / (f)ast (t)ests / (s)low (t)ests / (n)uget (pack)?:
 :: Weird string normalisation or something..
 set task= "%task%"
 
@@ -31,23 +38,27 @@ if %interactive% == "true" goto loop
 goto done
 
 :builddebug
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /verbosity:q /p:Configuration=Debug "%CD%\..\src\NHelpfulException.sln"
+!msBuildLocation! /m:8 /verbosity:q /p:Configuration=Debug "%CD%\..\src\!solutionAndMainProjectName!.sln"
 goto resume
 
 :buildrelease
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /p:Configuration=Release "%CD%\..\src\NHelpfulException.sln"
+!msBuildLocation! /m:8 /p:Configuration=Release "%CD%\..\src\!solutionAndMainProjectName!.sln"
 goto resume
 
 :buildstaging
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe /m:8 /p:Configuration=Staging "%CD%\..\src\NHelpfulException.sln"
+!msBuildLocation! /m:8 /p:Configuration=Staging "%CD%\..\src\!solutionAndMainProjectName!.sln"
 goto resume
 
 :nugetpack
-nuget pack %CD%\..\src\NHelpfulException\NHelpfulException.csproj -Prop Configuration=Release -Symbols
+cd %CD%\..
+nuget pack %CD%\src\!solutionAndMainProjectName!\!solutionAndMainProjectName!.csproj -Prop Configuration=Release -Symbols
+cd /d %0\.. 
 goto resume
 
 :clean
 call %CD%\..\src\clean.bat
+::return working directory to the location of this script
+cd /d %0\.. 
 goto resume
 
 :fasttests
