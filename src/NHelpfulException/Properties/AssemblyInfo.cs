@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("NHelpfulException")]
 [assembly:
     AssemblyDescription(
-        "Simple System.Exception wrapper to improve the understandability of exceptions when they are thrown.")]
+        "A simple wrapper for System.Exception to help make exceptions more meaningful.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ben Aston")]
 [assembly: AssemblyProduct("NHelpfulException")]
