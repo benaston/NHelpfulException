@@ -1,136 +1,27 @@
 # VS Bits
 [Oo]bj
-[Bb]in
-[Cc]lient[Bb]in
-
+[bB]in
 *.suo
 Publish.xml
 
-# p4merge
-*.orig
-
-# other merge artifacts
-*.REMOTE.*
-*.BASE.*
-*.BACKUP.*
-*.LOCAL.*
-
-# database temp dir
-[Ww]ebsite/[Dd]atabase/[Tt]emp
-
-# Some random build artifact...
-Libs/*.dll
-
 # ReSharper
 _ReSharper.*
-*.ReSharper
 *.user
-
-#dotCover
-*.dotCover
-
-# VS Productivity Power Tools
-*.docstates
 
 # Runtime/Misc Junk :)
 *.log*
 .sass-cache
-*.orig
-Website/GG.Web.Website/content/2011/.livereload
-Website/GG.Web.Website.Logs/*.*
-.DS_Store
-
-# Compiled CSS conventional location; SS (Grab me if this causes problems!!)
-*compiled/*.css
-
-# SASS local tools for IDE 
-*.idea 
-Website/GG.Web.Website/content/tabulous/sass/.idea/*.*
+.orig
 
 # SASS-Generated Files
-Website/GG.Web.Website/content/tabulous/css/**/*.css
-Website/GG.Web.Website/content/*/css/*/*.css 
-Website/GG.Web.Website/content/*/css
-Website/GG.Web.Website/content/2011/css/**/*.css
-Website/GG.Web.Website/content/2011/css/*.css
-Website/GG.Web.Website/jg-refresh/css/compiled/*.css
 
 
 # Project Build Output
-Website/GG.Service.MSMQListenerService.Installer/Debug/
-Integration/Libs/GG.Integration.ThreeDSecure.dll
-/Website/GG.Web.Website/GG.Web.Website.Publish.xml
-Website/GG.Service.MSMQListenerService.Installer/Staging
-/Integration/EmailVision/GG.Integration.EmailVision.MsmqService.Installer/Debug
-/Integration/EmailVision/GG.Integration.EmailVision.MsmqService.Installer/Release
-/Website/GG.Web.Website/GG.Api.Services.Sms_deploy/.htaccess
-/Website/GG.Web.Website/GG.Api.Services.Sms_deploy/Content/JG.png
-/Website/GG.Web.Website/GG.Api.Services.Sms_deploy/Global.asax
-/Website/GG.Web.Website/GG.Api.Services.Sms_deploy/Web.config
-/Website/GG.Web.Website/GG.Api.Services.Sms_deploy/urlrewrite/default.aspx
-/Website/GG.Api.Services.Sms.Test.Unit/GG.Api.Services.Sms.Test.Unit.csproj.VisualState.xml
-/Website/GG.Api.Services.Sms.Test.Unit/TestResult.xml
-/Website/GG.Api.Services.Sms/GG.Api.Services.Sms.csproj.VisualState.xml
-/Website/GG.Api.Services.Sms/TestResult.xml
-/Website/GG.DataAccess/GG.DataAccess.csproj.VisualState.xml
-/Website/GG.DataAccess/TestResult.xml
-/Website/GG.Service.MSMQListenerService.Installer/TeamServer/GG.Service.MSMQListenerService.Installer.msi
-/Website/GG.Service.MSMQListenerService.Installer/TeamServer/setup.exe
-/Website/GG.Service.PaymentProcessing.Setup/TeamServer/GG.Service.PaymentProcessing.Setup.msi
-/Website/GG.Service.PaymentProcessing.Setup/TeamServer/setup.exe
-/Website/GG.Service.RealTimeEmailProcessing.Setup/TeamServer/GG.Service.RealTimeEmailProcessing.Setup.msi
-/Website/GG.Service.RealTimeEmailProcessing.Setup/TeamServer/setup.exe
-/Build/Output
-/Certificates/SmsApiSignRoot.cer
-/Certificates/SmsApiSignRoot.pvk
 
-# Companies
-Website/GG.Web.Website.Companies/[Cc]ontent/css/compiled/*.css
-Website/GG.Web.Website.Companies/content/images/imagecache/*.*
+#Mac and vim files
+*.swp
+.DS_Store
+Thumbs.db
 
-/QuantivProjects/BB01/Deployments/V2.0.0/20100202T173901/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100202T173901/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100202T173901/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100423T161959/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100423T161959/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100423T161959/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100423T162037/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100423T162037/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100423T162037/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100426T081339/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100426T081339/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100426T081339/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100811T104335/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100811T104335/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100811T104335/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100906T141818/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100906T141818/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100906T141818/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100929T125232/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100929T125232/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20100929T125232/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20101019T150239/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20101019T150239/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20101019T150239/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20101104T173517/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20101104T173517/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20101104T173517/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20110302T165302/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20110302T165302/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20110302T165302/SecurityConfiguration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20110321T120014/Configuration.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20110321T120014/DeploymentInfo.xml
-/QuantivProjects/BB01/Deployments/V2.0.0/20110321T120014/SecurityConfiguration.xml
-
-/Build/Output
-/Website/GG.Api.Services.Data.Sdk/build/output
-/Database/Temp/Build/Coverage/
-coverage.xml
+#Misc
 TestResult.xml
-coverage.xml.bkp
-Main.1.1.dotCover
-ClientBin/
-/Database/Temp/dbdeploy-output.sql
-/Database/Temp/dbdeploy-output.sql
-/Database/Temp/dbdeploy-output.sql
-/Database/Temp/dbdeploy-output.sql
