@@ -41,3 +41,9 @@ Usage:
 	 - Stop drinking so much coffee.
 	 
 ```
+
+
+License & Copyright
+--------
+
+This software is released under the GNU Lesser GPL. It is Copright 2011, Ben Aston. I may be contacted at ben@bj.ma.
