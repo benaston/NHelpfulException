@@ -1,10 +1,10 @@
 @echo off
-REM NuGet.exe must be in the path for the nuget functionality to work here.
+:: NuGet.exe must be in the path for the nuget functionality to work here.
 cd /d %0\.. 
 
 setlocal enabledelayedexpansion
 set solutionAndMainProjectName=NHelpfulException
-set msBuildLocation=C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
+set msBuildLocation=%windir%\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe
 
 title !solutionAndMainProjectName!
 
@@ -17,7 +17,6 @@ goto switch
 :loop
 set interactive= "true"
 set /p task= !solutionAndMainProjectName! build script usage: (b)uild(d)ebug / (b)uild(s)taging / (b)uild(r)elease  / (c)lean / (f)ast (t)ests / (s)low (t)ests / (n)uget (pack)?:
-:: Weird string normalisation or something..
 set task= "%task%"
 
 :switch
